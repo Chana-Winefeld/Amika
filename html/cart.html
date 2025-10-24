@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/cart.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../css/personalSettings.css">
+
+<body onload="onload1()">
+
+    <!-- תפריט -->
+    <nav class="main-nav">
+        <div class="nav-section logo-section">
+            <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+        </div>
+
+        <div class="nav-section center-section">
+            <a href="./shop.html">חנות</a>
+            <a href="./sale.html">מבצעים והטבות</a>
+            <a href="./about.html">אודות</a>
+            <a href="#">צור קשר</a>
+        </div>
+
+        <div class="nav-section icons-section">
+            <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+            <span id="userNameDisplay"></span>
+        </div>
+    </nav>
+
+
+    <h2>סל הקניות שלך</h2>
+    <section id="cart-container"></section>
+    <div id="calc">
+
+    </div>
+    <button onclick="check()">לתשלום</button>
+    <div id="popup-message" class="popup-message">החבילה בדרך אליך!</div>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/personalSettings.js"></script>
+</body>
+
+</html>

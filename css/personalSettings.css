@@ -1,0 +1,74 @@
+body {
+  background-color: #fdfaf2;
+}
+
+div {
+  text-align: center;
+}
+
+h2 {
+  margin: 30px;
+  font-size: xx-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+  font-size: larger;
+  padding: 5px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* גופנים */
+body.font-arial {
+  font-family: Arial, sans-serif;
+}
+
+body.font-tahoma {
+  font-family: Tahoma, sans-serif;
+}
+
+body.font-verdana {
+  font-family: Verdana, sans-serif;
+}
+
+body.font-david {
+  font-family: David, serif;
+}
+
+body.font-courier-new {
+  font-family: "Courier New", monospace;
+}
+
+/* גדלים */
+body.size-14 {
+  font-size: 14px;
+}
+
+body.size-16 {
+  font-size: 16px;
+}
+
+body.size-18 {
+  font-size: 18px;
+}
+
+body.size-20 {
+  font-size: 20px;
+}
+
+/* הדגשה במעבר עכבר */
+.hover-highlight p:hover,
+.hover-highlight a:hover,
+.hover-highlight h1:hover,
+.hover-highlight h2:hover,
+.hover-highlight h3:hover,
+.hover-highlight li:hover,
+.hover-highlight span:hover {
+  background-color: yellow !important;
+  color: rgb(221, 18, 18) !important;
+  font-size: xx-large;
+  transition: 0.2s;
+}

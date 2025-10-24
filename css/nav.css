@@ -1,0 +1,59 @@
+
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 19px; 
+  background-color: #fdfaf2;
+    font-weight: 700px;
+  padding: 10px 40px;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  direction: rtl;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.center-section {
+  gap: 40px;
+}
+
+.icons-section {
+  gap: 25px; 
+  font-size: 20px;
+}
+
+.icons-section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+.main-nav a:hover {
+  color: #db5656;
+}
+
+#logo {
+  height: 65px;
+  width: auto;
+}
+
+#userNameDisplay {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}

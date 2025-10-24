@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/personalSettings.css">
+
+</head>
+
+<body>
+  <!-- תפריט -->
+    <nav class="main-nav">
+        <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+        <a href="./shop.html">חנות</a>
+        <a href="./sale.html">מבצעים והטבות</a>
+        <a href="../html/about.html">אודות</a>
+        <a href="#">צור קשר</a>
+        <br>
+        <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+        <span id="userNameDisplay"></span>
+    </nav>
+    
+    <section id="product-details">
+
+    </section>
+    <div id="product-details"></div>
+    <div class="buttons-column">
+        <button class="add-to-cart" onclick="add(product.id)">הוספה לסל</button>
+        <button id="back" onclick="goBack()">חזרה לאחור</button>
+    </div>
+    <!-- סל הקניות -->
+    <div id="popup-message" class="popup-message">המוצר נוסף לסל!</div>
+    <script src="../js/pruduct.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/personalSettings.js"></script>
+</body>
+
+</html>

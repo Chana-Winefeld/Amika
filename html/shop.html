@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <title>פרטי מוצר</title>
+  <link rel="stylesheet" href="../css/shop.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/personalSettings.css">
+</head>
+
+<nav class="main-nav">
+  <div class="nav-section logo-section">
+    <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+  </div>
+  <div class="nav-section center-section">
+    <a href="./shop.html">חנות</a>
+    <a href="./sale.html">מבצעים והטבות</a>
+    <a href="./about.html">אודות</a>
+    <a href="#">צור קשר</a>
+  </div>
+
+  <div class="nav-section icons-section">
+    <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+    <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+    <span id="userNameDisplay"></span>
+  </div>
+</nav>
+
+<body onload="createProductsCards()">
+  <section id="products"></section>
+  <div id="product-details"></div>
+  <div id="message"></div>
+  <div id="popup-message" class="popup-message">המוצר נוסף לסל!</div>
+  <!-- <footer><img src="../images/דף הבית/צילום מסך 2025-05-20 195430.png"></footer> -->
+  <script src="../js/shop.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/personalSettings.js"></script>
+</body>
+
+</html>

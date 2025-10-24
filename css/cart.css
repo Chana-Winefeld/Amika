@@ -1,0 +1,114 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    transition: 0.3s;
+}
+
+.cart-item:hover {
+    transform: scale(1.01);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.cart-item div {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.cart-item button {
+    background-color: #393838;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-item button:hover {
+    background-color: #898181;
+}
+
+#calc h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #444;
+}
+
+button[onclick="check()"] {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ec768a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[onclick="check()"]:hover {
+    background-color: #787878;
+}
+
+/* ההודעה הקופצת */
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #27ae60;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.popup-message.show {
+    opacity: 1;
+}

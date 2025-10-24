@@ -1,0 +1,128 @@
+/* עיצוב הדף */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf4;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  direction: rtl;
+}
+
+#product-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#product-details img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.product-div {
+  max-width: 500px;
+}
+
+.product-div h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.product-div h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.quantity span {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button.add-to-cart {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#back{
+  
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+/* עיצוב ההודעה על ההוספה לסל */
+.popup-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.popup-message.show {
+  opacity: 1;
+}
+
+.buttons-column {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+  margin-top: 0px;
+  width: 150px;
+}
+
+.buttons-column button {
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

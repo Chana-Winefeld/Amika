@@ -1,0 +1,122 @@
+
+body {
+  margin: 0;
+  background-color: #fffaf0;
+font-family: "Segoe UI", "Tahoma", sans-serif;
+  direction: rtl;
+}
+
+/* עיצוב המוצרים */
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 60px;
+  padding: 60px;
+  justify-items: center;
+  background-color: #fffaf0;
+}
+
+.product {
+  background-color: transparent;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+  width: 250px;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+.product img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #222;
+  height: 40px;
+}
+
+.product .stars {
+  color: #ff5c00;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0;
+}
+/* עיצוב הודעת ההוספה לסל */
+.popup-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #da135f;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+.popup-message.show {
+  opacity: 1;
+}
+/* עיצוב ההוספה לסל ובחירת הכמות */
+.quantity-control {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;
+}
+
+
+.quantity-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px; 
+}
+
+.quantity-buttons button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+
+.quantity-buttons span {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* כפתור "הוסף לסל" */
+button.add-to-cart {
+  display: block;
+  margin: 0 auto;        
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+
+
+

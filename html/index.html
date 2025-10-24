@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amika</title>
+</head>
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../css/personalSettings.css">
+
+
+<body onload="loadPage()">
+  <!-- תפריט -->
+  <nav class="main-nav">
+    <div class="nav-section logo-section">
+      <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+    </div>
+
+    <div class="nav-section center-section">
+      <a href="./shop.html">חנות</a>
+      <a href="./sale.html">מבצעים והטבות</a>
+      <a href="./about.html">אודות</a>
+      <a href="#">צור קשר</a>
+    </div>
+
+    <div class="nav-section icons-section">
+      <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+      <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+      <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+      <span id="userNameDisplay"></span>
+    </div>
+  </nav>
+
+  <div id="containerImg"></div>
+  <img id="text" src="../images/דף הבית/text.png" />
+  <section id="categories"></section>
+
+  <!-- תמונות מתחלפות -->
+  <section>
+    <img id="box1" src="../images/דף הבית/box1 (1).png" />
+    <img id="box2" src="../images/דף הבית/box2 (1).png" />
+    <img id="a" src="../images/דף הבית/a.png" />
+    <img id="b" src="../images/דף הבית/b (1).png" />
+    <img id="f1" src="../images/דף הבית/צילום מסך 2025-05-20 195430.png" />
+
+
+  </section>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/personalSettings.js"></script>
+</body>
+
+</html>

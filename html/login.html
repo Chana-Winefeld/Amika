@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>החשבון שלי</title>
+
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/personalSettings.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+</head>
+<body>
+
+      <!-- תפריט -->
+    <nav class="main-nav">
+        <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+        <a href="./shop.html">חנות</a>
+        <a href="./sale.html">מבצעים והטבות</a>
+        <a href="../html/about.html">אודות</a>
+        <a href="#">צור קשר</a>
+        <br>
+        <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+        <span id="userNameDisplay"></span>
+    </nav>
+
+<div class="auth-container">
+  <form id="loginForm" class="auth-form">
+    <h2>התחבר</h2>
+    <p>כתובת אימייל*</p>
+    <input type="email" id="loginEmail" required />
+    <p>סיסמה*</p>
+    <input type="password" id="loginPassword" required />
+  <br>
+    <button type="submit">התחבר</button>
+    <p id="loginError" class="error"></p>
+  </form>
+
+  <form id="registerForm" class="auth-form hidden">
+    <h2>הרשמה</h2>
+    <p>שם מלא*</p>
+    <input type="text" id="registerName" required />
+    <p>תאריך לידה*</p>
+    <input type="date" id="registerDOB" required />
+    <p>טלפון*</p>
+    <input type="tel" id="registerPhone" required />
+    <p>כתובת אימייל*</p>
+    <input type="email" id="registerEmail" required />
+    <p>סיסמה*</p>
+    <input type="password" id="registerPassword" required />
+    <button type="submit">הרשמה</button>
+    <p id="registerError" class="error"></p>
+  </form>
+
+  <div class="tabs">
+      <button id="loginTab" class="main-button">התחבר</button>
+    <button id="registerTab" class="main-button">הרשם לאתר</button>
+  </div>
+</div>
+<script src="../js/login.js"></script>
+  <script src="../js/personalSettings.js"></script>
+  <script src="../js/nav.js"></script>
+
+  
+</body>
+</html>
+

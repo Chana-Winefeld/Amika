@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>הגדרות אישיות</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/personalSettings.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- תפריט -->
+  <nav class="main-nav">
+    <a href="./index.html"><img id="logo" src="../images/logo.png" /></a>
+    <a href="./shop.html">חנות</a>
+    <a href="./sale.html">מבצעים והטבות</a>
+    <a href="./about.html">אודות</a>
+    <a href="#">צור קשר</a>
+    <br>
+    <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+    <a href="./personalSettings.html"><i class="fa-solid fa-cog"></i></a>
+    <span id="userNameDisplay"></span>
+  </nav>
+
+  <div>
+    <h2>הגדרות עיצוב אישיות</h2>
+    
+    <label for="textColor">צבע גופן:</label>
+    <input type="color" id="textColor" />
+    <br>
+    <label for="fontFamily">סוג גופן:</label>
+    <select id="fontFamily">
+      <option value="Arial">Arial</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Courier New">Courier New</option>
+      <option value="David">David</option>
+    </select>
+    <br>
+    <label for="fontSize">גודל גופן:</label>
+    <input type="number" id="fontSize" min="10" max="100" />
+    <br>
+    <label for="hoverHighlight">
+      <input type="checkbox" id="hoverHighlight" /> הדגשה במעבר עכבר
+    </label>
+    <br>
+    <button onclick="saveSettings()">אישור</button>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/personalSettings.js"></script>
+
+</body>
+
+</html>
